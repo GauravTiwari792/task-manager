@@ -1,0 +1,76 @@
+body {
+    background-color: aliceblue;
+    font-family: monospace;
+}
+
+#task-manager{
+    width: max-content;
+    margin: 10px auto;
+    text-align: center;
+    background-color: white;
+    padding: 20px 80px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#task-manager h1 {
+    font-size: 2.5em;
+} 
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#new-task {
+    padding: 5px 10px;
+    font-size: 1.2em;
+}
+
+#task-list li{
+    padding: 5px 0;
+    border-bottom: 1px solid black;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#add-task{
+    padding: 5px 10px;
+    font-size: 1.2em;
+    background-color: #198754;
+    color: white;
+    border: 2px solid #198754;
+    border-radius: 2px;
+    position: relative;
+    left: -10px;
+}
+
+#add-task:hover{
+    cursor: pointer;
+}
+
+#add-task:disabled{
+    background-color: #ccc;
+    border: 2px solid #ccc;
+    color: darkgray;
+}
+
+#add-task:disabled:hover{
+    cursor: default;
+}
+
+.delete-btn, .mark-btn , .edit-btn{
+    padding: 5px;
+    margin: 0 5px;
+    background-color: white;
+    border: none;
+}
+
+.delete-btn:hover, .mark-btn:hover , .edit-btn{
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+}
